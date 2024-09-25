@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title script="document.title = calc;">Shirfarhad's Calculator</title>
+    <style>
+      .main{
+        border: solid 6px navy;
+        background-color: cornflowerblue;
+        margin-top: 10%;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5%;
+        padding-top: 2%;
+        padding-bottom: 1%;
+        width: 20%;
+      }
+      button{
+        padding: 10px;
+        background-color: blueviolet;
+        margin: 0 10px;
+        
+      }
+      .button-wrapper {
+        display: flex;
+        justify-content: center;
+        display: flex;
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: center; /* Center align buttons */
+      }
+      .motherfucker{
+        width: auto;
+        height: 10%;
+        background-color: aliceblue;
+        padding: 20px;
+        padding-left: 100px;
+        padding-right: 100px;
+        font-size: 20px;
+        text-align: center; /* Center text in the display */
+        margin-bottom: 10px; /* Add some space below the display */
+      }
+      .row {
+        display: flex; /* Use flexbox for rows */
+        justify-content: center;
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    
+    <div class='main'>
+      
+      <br>
+      <div class='button-wrapper'>
+        <div class="row">
+          <div id="display" class="motherfucker">0</div>
+        </div>
+        <div class="row">  
+          <button onclick="calc += '1'; document.getElementById('display').innerHTML = calc;">1</button>
+          <button onclick="calc += '2'; document.getElementById('display').innerHTML = calc;">2</button>
+          <button onclick="calc += '3'; document.getElementById('display').innerHTML = calc;">3</button>
+          <button onclick="calc += '4'; document.getElementById('display').innerHTML = calc;">4</button>
+          <button onclick="calc += '5'; document.getElementById('display').innerHTML = calc;">5</button>
+        </div>
+        <div class="row">
+          <button onclick="calc += '6'; document.getElementById('display').innerHTML = calc;">6</button>
+          <button onclick="calc += '7'; document.getElementById('display').innerHTML = calc;">7</button>
+          <button onclick="calc += '8'; document.getElementById('display').innerHTML = calc;">8</button>
+          <button onclick="calc += '9'; document.getElementById('display').innerHTML = calc;">9</button>
+          <button onclick="calc += ' + '; document.getElementById('display').innerHTML = calc;">+</button>
+        </div>
+        <div class="row">
+          <button onclick="calc += ' - '; document.getElementById('display').innerHTML = calc;">-</button>
+          <button onclick="calc += ' * '; document.getElementById('display').innerHTML = calc;">*</button>
+          <button onclick="calc += ' / '; document.getElementById('display').innerHTML = calc;">/</button>
+          <button onclick="calc = eval(calc); document.getElementById('display').innerHTML = calc;">=</button>
+          <button onclick="calc = ''; document.getElementById('display').innerHTML = calc;">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      let calc = '';
+      document.getElementById('display').innerHTML = calc;
+
+    </script>
+  </body>
+</html>
