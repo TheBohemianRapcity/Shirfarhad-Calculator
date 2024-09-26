@@ -2,15 +2,10 @@
         border: solid 6px navy;
         background-color: cornflowerblue;
         margin-top: 10%;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
+        display: inline-block;
         align-items: center;
         justify-content: center;
         padding: 5%;
-        padding-top: 2%;
-        padding-bottom: 1%;
-        width: 20%;
       }
       button{
         padding: 10px;
@@ -19,7 +14,6 @@
         
       }
       .button-wrapper {
-        display: flex;
         justify-content: center;
         display: flex;
         flex-direction: column; /* Stack buttons vertically */
@@ -40,4 +34,7 @@
         display: flex; /* Use flexbox for rows */
         justify-content: center;
         margin-bottom: 10px;
+      }
+      .wrapper {
+        text-align: center;
       }
